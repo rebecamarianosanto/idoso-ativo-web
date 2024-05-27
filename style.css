@@ -145,24 +145,21 @@ main{
     align-items: center;
     width: 100%;
     height: var(--font-img);
-    border: 1px solid #3333;
     border-radius:82% 18% 77% 23% /28% 67% 33% 72%  ;    
 
 }
 .img-foto{
     width: 100%;
     height: 100vh;
-    background-image: url(img/img-fundo/shra-pensativa.png); 
+    background-image: url(img/img-fundo/shra.png); 
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;
-    border: 1px solid #7572721e;
-    border-radius:28% 67% 33% 72% /82% 18% 77% 23%  ;
 }
 .infos-main{
     position: relative;
     height: auto;
-    width: 1200px;
+    width: 1020px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1011,19 +1008,13 @@ footer{
 
 
 
-
+/*responsividade*****************************/
 
 @media screen and (max-width: 990px){
     /*main*/
     main{
         margin-bottom: 2rem;
-
     }
-    .img-foto{
-        width: 100%;
-        height: 80vh;
-    }
-
 }
 @media screen and (max-width: 940px){
     /*main*/
@@ -1032,8 +1023,8 @@ footer{
         padding: 10px;
     }
     .infos-main{
-        border: 1px solid red;
         width: 100%;
+        gap: 1rem;
     }
     .infos-main .title-main{
         width: 100%;
@@ -1043,20 +1034,15 @@ footer{
         width: 100%;
         height: auto;
     }
-    .img-main{
-        width: 40%;
-        height: 50vh; 
-        border: 1px solid #3333;
-        border-radius:82% 18% 77% 23% /28% 67% 33% 72%  ;     
-    }
     .img-foto{
-        width: 100%;
-        height: 50vh;
-        border: 1px solid #3333;
-        border-radius:28% 67% 33% 72% /82% 18% 77% 23%  ;
+        position: absolute;
+        margin-left: 2rem;
+        background-position: left;
+        width: 80%;
+        height: 70vh;
     }
+    
 }
-
 
 @media screen and (max-width: 899px){
     /* header e menu-mobile *******************/
@@ -1177,46 +1163,15 @@ footer{
     /*footer*/
     .footer-infos{
         padding: 5px;
-
-
     }
     .footer-infos{
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
         padding-left: 20px;
-
     }
-    /*main*/
-    .img-main{
-        width: 40%;
-        height: 50vh;   
-        border: 1px solid #3333;
-        border-radius:82% 18% 77% 23% /28% 67% 33% 72%  ; 
-    }
-    .img-foto{
-        width: 100%;
-        height: 50vh;
-        border: 1px solid #3333;
-        border-radius:28% 67% 33% 72% /82% 18% 77% 23%  ;
-    }
-
 }
-@media screen and (max-width: 400px){
-    /*main*/
-    .img-main{
-        width: 100%;
-        height: 50vh;   
-        border: 1px solid #3333;
-        border-radius:82% 18% 77% 23% /28% 67% 33% 72%  ; 
-    }
-    .img-foto{
-        width: 100%;
-        height: 50vh;
-        border: 1px solid #3333;
-        border-radius:28% 67% 33% 72% /82% 18% 77% 23%  ;
-    }
-    
-}
+
+
 
 
