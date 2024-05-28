@@ -151,7 +151,7 @@ main{
 .img-foto{
     width: 100%;
     height: 100vh;
-    background-image: url(img/img-fundo/shra.png); 
+    background-image: url(img/img-fundo/shra-negra.png); 
     background-repeat: no-repeat;
     background-position: left;
     background-size: contain;
@@ -401,7 +401,7 @@ main{
 }
 .section-parcerias{
     width: 100%;
-    height: 70vh;
+    height: auto;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -410,20 +410,24 @@ main{
     margin-bottom: 2rem;
 }
 .parcerias{
-    width: 90%;
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-around;
+    justify-content:center;
     gap: 2.5rem;
     flex-wrap: wrap;
+    padding: 10px;
 }
 .parcerias h2{
     font-size:23px;
+    margin-bottom: 1rem;
 }
 .logo-empresas{
     width: 90%;
+    height: auto;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -431,6 +435,7 @@ main{
     gap: 2rem;
     flex-wrap: wrap;
     flex-grow: 1;
+
 }
 .logo-empresas-img1{
     width: 100px;
@@ -514,7 +519,7 @@ main{
     background-color: #010208;
     color: #f1f1f1;
     width: 100%;
-    height: 25vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -659,9 +664,9 @@ main{
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 350px;
+    max-width: 375px;
     background-color: #fff;
-    padding:  20px 40px;
+    padding:  20px 10px;
     position: relative;
     border: 1px solid #017A8F;   
   }
@@ -1086,6 +1091,7 @@ footer{
     .cards-one3{
         padding: 10px;
     }
+ 
     /*sobre*/
     .sobre-website{
         flex-direction: column;
@@ -1117,7 +1123,7 @@ footer{
         gap: 2rem;
     }
     .formulario{
-        width: 80%;
+        width: 100%;
         padding: 10px;
 
     }
@@ -1168,8 +1174,10 @@ footer{
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
-        padding-left: 20px;
+        padding-left: 0px;
+        padding-left: 30px;
     }
+
 }
 
 
