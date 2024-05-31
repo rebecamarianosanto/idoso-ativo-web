@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idosos na ativa</title>
+    <!--CSS HOME-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Link biblioteca Font Awsome - icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+
+    <!-- Animação AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- JS btn-mobile -->
+    <link rel="stylesheet" href="animar.js">
+
+    <!--JS Formulário-->
+    <link rel="stylesheet" href="form.js">
+</head>
+
+<body>
+    <!-- Header ------------------------------>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-circle"></i>
+            <p>Idosos na ativa</p>
+
+        </div>
+        <div class="header-links">
+            <a href="#">Home</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#cursos-parcerias">Cursos e Parcerias</a>
+            <a href="#contatos">Contatos</a>
+            <a href="forum.html" target="_blank" rel="external">Fórum</a>
+        </div>
+        <!-- BOTÃO MOBILE --------------------->
+        <button onclick="animarMenu()" id="btn-menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- MENU MOBILE --------------------->
+        <div class="menu-mobile" id="menu-mobile">
+            <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+
+            <a href="#sobre"><i class="fa-solid fa-users" style="color: #000000;"></i> Sobre nós</a>
+
+            <a href="#cursos-parcerias"><i class="fa-solid fa-book" style="color: #000000;"></i> Cursos e Parcerias</a>
+
+            <a href="#contatos"><i class="fa-solid fa-phone" style="color: #030303;"></i> Contatos</a>
+
+            <a href="forum.html" target="_blank" rel="external"><i class="fa-regular fa-comments"
+                    style="color: #000000;"></i> Fórum</a>
+
+        </div>
+    </header>
+
+    <!--Main-------------------------->
+    <main>
+        <div class="main-info">
+            <div class="title-txt">
+                <div class="title">
+                    <p>A força da</p>
+                    <h1>Experiência</h1>
+                </div>
+                <div class="main-txt">
+                    <p>Junte-se a nós e descubra o poder da comunidade, um espaço online feito sob medida para inspirar
+                        e capacitar idosos ativos para uma vida mais plena, onde a experiência é o nosso superpoder!</p>
+                </div>
+                <div class="button-main">
+                    <a class="btn-main" href="#sobre">SAIBA MAIS</a>
+                </div>
+            </div>
+            <div class="img-main">
+                <div class="img-foto-main"></div>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!--Section-sobre----------------->
+    <section class="section-sobre" id="sobre">
+        <div class="sobre-website">
+            <div class="sobre-txt">
+                <h2>Transformando vidas</h2>
+                <p>
+                    Somos uma equipe que acreditamos que todos têm o direito de explorar novas oportunidades e buscar o
+                    crescimento em qualquer idade. Nossa visão é criar uma comunidade acolhedora e inspiradora, onde os
+                    idosos possam se conectar, aprender e prosperar juntos.
+                </p>
+            </div>
+            <div class="img-sobre">
+                <div class="img1"></div>
+                <div class="img2"></div>
+                <div class="img3"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Section cards---------------------->
+    <section class="cards">
+        <div class="container-cards">
+            <div class="cards-one1" data-aos="zoom-in-right" data-aos-duration="1500">
+                <div class="card">
+                    <i class="fa-solid fa-book" style="color: #000000;"></i>
+                    <h2>Cursos</h2>
+                    <p>Oferecemos uma ampla variedade de cursos projetados especificamente para atender às necessidades
+                        e interesses dos idosos, desde aulas de informática a atividades artísticas. Além disso,
+                        trabalhamos em parceria com empresas que oferecem cursos em suas plataformas com certificado,
+                        garantindo a qualidade e aprendizado dos nossos membros. </p>
+                </div>
+                <div class="card-linha"></div>
+            </div>
+            <div class="cards-one2" data-aos="zoom-in-left" data-aos-duration="1700">
+                <div class="card">
+                    <i class="fa-regular fa-handshake"></i>
+                    <h2>Parcerias</h2>
+                    <p>Estabelecemos parcerias sólidas com empresas comprometidas em apoiar a comunidade sênior. Essas
+                        parcerias não apenas oferecem vantagens exclusivas aos nossos membros, como também criam
+                        oportunidades de emprego e colaborações significativas.</p>
+                </div>
+                <div class="card-linha"></div>
+            </div>
+            <div class="cards-one3" data-aos="zoom-in-right" data-aos-duration="1900">
+                <div class="card">
+                    <i class="fa-regular fa-comments" style="color: #000000;"></i>
+                    <h2>Fórum</h2>
+                    <p>Nosso fórum de dúvidas é um espaço onde os idosos podem fazer perguntas, compartilhar
+                        experiências e encontrar apoio mútuo. Queremos que todos se sintam à vontade para participar,
+                        aprender e crescer juntos. Junte-se a nós e faça parte dessa troca enriquecedora de
+                        conhecimentos e experiências!</p>
+                </div>
+                <div class="card-linha"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Parcerias----------------------->
+    <section class="section-parcerias" id="cursos-parcerias">
+        <div class="parcerias">
+            <h2>Nossas principais parcerias</h2>
+            <div class="logo-empresas">
+                <div class="logo-empresas-img1"></div>
+                <div class="logo-empresas-img2"></div>
+                <div class="logo-empresas-img3"></div>
+                <div class="logo-empresas-img4"></div>
+                <div class="logo-empresas-img5"></div>
+                <div class="logo-empresas-img6"></div>
+                <div class="logo-empresas-img7"></div>
+                <div class="logo-empresas-img8"></div>
+                <div class="logo-empresas-img9"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Lembrete------------------------->
+    <section class="lembrete">
+        <p>Clique nos links e acesse nossos campos de cursos e fórum, aproveite todas as oportunidades para aprender e
+            se conectar. </p>
+        <div class="but-links-externos">
+            <a class="btn" href="homecursos.html" target="_blank" rel="external">Cursos</a>
+
+            <a class="btn2" href="forum.html" target="_blank" rel="external">Fórum</a>
+        </div>
+    </section>
+
+    <!--Formulário--------------------->
+    <section class="form-duvidas" id="contatos">
+        <div class="formulario">
+            <form class="form" action="https://formsubmit.co/web.idosoativo@gmail.com" method="POST" data-form>
+
+                <div class="flex">
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>Nome</span>
+                    </label>
+
+                    <label>
+                        <input required="" placeholder="" type="text" class="input">
+                        <span>Sobrenome</span>
+                    </label>
+                </div>
+
+                <label>
+                    <input required="" placeholder="" type="email" class="input">
+                    <span>E-mail</span>
+                </label>
+
+                <label>
+                    <input required="" type="tel" placeholder="" class="input">
+                    <span>Contato</span>
+                </label>
+                <label>
+                    <textarea required="" rows="3" placeholder="" class="input01"></textarea>
+                    <span>Mensagem</span>
+                </label>
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado-idoso-na-ativa">
+
+                <button type="submit" data-button class="fancy" href="https://formsubmit.co/web.idosoativo@gmail.com">
+                    <span class="top-key"></span>
+                    <span class="text">Enviar</span>
+                    <span class="bottom-key-1"></span>
+                    <span class="bottom-key-2"></span>
+                </button>
+            </form>
+        </div>
+        <div class="form-txt">
+            <h3>
+                Gostou da nossa proposta?
+            </h3>
+            <p>
+                Se surgir alguma dúvida ou se precisar de assistência, não hesite em entrar em contato com nossa equipe.
+                Estamos disponíveis em diversos canais de atendimento, prontos para oferecer o suporte necessário e
+                ajudá-lo da da melhor forma possível. Estamos ansiosos para te ouvir e auxiliá-lo em sua jornada
+                conosco.
+            </p>
+        </div>
+    </section>
+
+    <!--Equipe-------------------------->
+    <section class="section-equipe">
+        <div class="equipe-geral">
+            <h2>Conheça nossa equipe</h2>
+            <div class="equipe-infos">
+                <!-- Julio-->
+                <div class="equipe-img-name">
+                    <div class="equipe-img1"></div>
+                    <div class="equipe-name">
+                        <p class="name">Julio Cesar Vargas Divino </p>
+                        <p class="ra">RA: 1769150</p>
+                    </div>
+                </div>
+                <!-- Lucas-->
+                <div class="equipe-img-name">
+                    <div class="equipe-img2"></div>
+                    <div class="equipe-name">
+                        <p class="name">Lucas Cardoso de Godoy </p>
+                        <p class="ra">RA: 1875913</p>
+                    </div>
+                </div>
+                <!--Marcelo -->
+                <div class="equipe-img-name">
+                    <div class="equipe-img3"></div>
+                    <div class="equipe-name">
+                        <p class="name">Marcelo Guilherme de Araujo Martinho </p>
+                        <p class="ra">RA: 1846360</p>
+                    </div>
+                </div>
+                <!-- Rebeca-->
+                <div class="equipe-img-name">
+                    <div class="equipe-img4"></div>
+                    <div class="equipe-name">
+                        <p class="name">Rebeca Mariano do Espirito Santo </p>
+                        <p class="ra">RA: 1691508</p>
+                    </div>
+                </div>
+                <!-- Stephannie-->
+                <div class="equipe-img-name">
+                    <div class="equipe-img5"></div>
+                    <div class="equipe-name">
+                        <p class="name">Stephanie Silva Souza </p>
+                        <p class="ra">RA: 1812387</p>
+                    </div>
+                </div>
+                <!-- Vitor-->
+                <div class="equipe-img-name">
+                    <div class="equipe-img6"></div>
+                    <div class="equipe-name">
+                        <p class="name">Vitor Hugo Calça </p>
+                        <p class="ra">RA:1708160</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Contatos-------------------------->
+    <section class="section-contatos">
+        <h3>Contatos</h3>
+        <div class="contatos-web">
+            <a href="mailto:web.idosoativo@gmail.com?subject=Website-%20Idoso%20ativo%20-%20Preciso%20de%20informa%C3%A7%C3%A3o!"
+                target="_blank" rel="external"><i class="fa-solid fa-envelope-open-text"></i>
+                web.idosoativo@gmail.com</a>
+            <div class="num-contatos">
+                <p><i class="fa-solid fa-phone-volume"></i> (11)4111-2000</p>
+                <p><i class="fa-brands fa-whatsapp"></i> (11)95000-2111</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer----------------------->
+    <footer>
+        <!--logo-->
+        <div class="footer-infos">
+            <div class="logo-footer">
+                <i class="fa-solid fa-circle"></i>
+                <p>Idosos na ativa</p>
+            </div>
+            <!--links-->
+            <div class="links-footer">
+                <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+
+                <a href="#sobre"><i class="fa-solid fa-users" style="color: #000000;"></i> Sobre nós</a>
+
+                <a href="#cursos-parcerias"><i class="fa-solid fa-book" style="color: #000000;"></i> Cursos e
+                    Parcerias</a>
+
+                <a href="forum.html" target="_blank" rel="external"><i class="fa-regular fa-comments"
+                        style="color: #000000;"></i> Fórum</a>
+            </div>
+            <!--contatos-->
+            <div class="contatos-footer">
+                <div class="num-contatos-footer">
+                    <p><i class="fa-solid fa-envelope-open-text"></i> web.idosoativo@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> (11)4111-2000</p>
+                    <p><i class="fa-brands fa-whatsapp"></i> (11)95000-2111</p>
+                </div>
+            </div>
+        </div>
+
+        <!--considerações finais-->
+        <div class="footer-end">
+            <p>Copyright © 2024. Alguns direitos reservados.</p>
+            <p>Imagens meramente ilustrativas - Crédito Unsplash</p>
+            <p>Desenvolvido por nossa equipe para trabalho FMU - Lab. Software e Projetos</p>
+        </div>
+    </footer>
+
+
+    <!---scripts js---------------->
+
+    <!-- js botão-menu-mobile ------------->
+    <script src="animar.js"></script>
+    <!--Js Formulário-->
+    <script src="form.js"></script>
+    <!-- JS animação AOS -->
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idosos na ativa</title>
+    <!--CSS HOME-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+    <!--Link biblioteca Font Awsome - icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
+
+    <!-- Animação AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- JS btn-mobile -->
+    <link rel="stylesheet" href="animar.js">
+
+</head>
+
+<body>
+    <!-- Header ------------------------------>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-circle"></i>
+            <p>Idosos na ativa</p>
+        
+        </div>
+        <div class="header-links">
+            <a href="#">Home</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#cursos-parcerias">Cursos e Parcerias</a>
+            <a href="#contatos">Contatos</a>
+            <a href="forum.html" target="_blank" rel="external">Fórum</a>
+        </div>
+        <!-- BOTÃO MOBILE --------------------->
+        <button onclick="animarMenu()" id="btn-menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- MENU MOBILE --------------------->
+        <div class="menu-mobile" id="menu-mobile">
+            <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+
+            <a href="#sobre"><i class="fa-solid fa-users" style="color: #000000;"></i> Sobre nós</a>
+
+            <a href="#cursos-parcerias"><i class="fa-solid fa-book" style="color: #000000;"></i> Cursos e Parcerias</a>
+
+            <a href="#contatos"><i class="fa-solid fa-phone" style="color: #030303;"></i> Contatos</a>
+
+            <a href="forum.html" target="_blank" rel="external"><i class="fa-regular fa-comments" style="color: #000000;"></i> Fórum</a>
+
+        </div>
+    </header>
+
+    <!--Main-------------------------->
+    <main>
+        <div class="main-info">
+            <div class="title-txt">
+                <div class="title" >
+                    <p class="scale-up-center">A força da</p>
+
+                    <h1 class="img-main" data-aos="fade-zoom"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-sine">Experiência</h1>
+                </div>
+                <div class="main-txt">
+                    <p>Junte-se a nós e descubra o poder da comunidade, um espaço online feito sob medida para inspirar e capacitar idosos ativos para uma vida mais plena, onde a experiência é o nosso superpoder!</p>
+                </div>
+                <div class="button-main scale-up-center">
+                    <a class="btn-main" href="#sobre">SAIBA MAIS</a>
+                </div>
+            </div>
+            <div class="img-main" data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
+                <div class="img-foto-main"></div>
+            </div>
+
+        </div>
+        
+    </main>
+
+    <!--Section-sobre----------------->
+    <section class="section-sobre" id="sobre">
+        <div class="sobre-website">
+            <div class="sobre-txt">
+                <h2>Transformando vidas</h2>
+                <p>
+                    Somos uma equipe que acreditamos que todos têm o direito de explorar novas oportunidades e buscar o crescimento em qualquer idade. Nossa visão é criar uma comunidade acolhedora e inspiradora, onde os idosos possam se conectar, aprender e prosperar juntos.
+                </p>
+            </div>
+            <div class="img-sobre">
+                <div class="img1"></div>
+                <div class="img2"></div>
+                <div class="img3"></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!--Section cards---------------------->
+    <section class="cards">
+        <div class="container-cards">
+            <div class="cards-one1" data-aos="zoom-in-right" data-aos-duration="1500">
+                <div class="card">
+                    <i class="fa-solid fa-book" style="color: #000000;"></i>
+                    <h2>Cursos</h2>
+                    <p>Oferecemos uma ampla variedade de cursos projetados especificamente para atender às necessidades e interesses dos idosos, desde aulas de informática a atividades artísticas. Além disso, trabalhamos em parceria com empresas que oferecem cursos em suas plataformas com certificado, garantindo a qualidade e aprendizado dos nossos membros. </p>
+                </div>
+                <div class="card-linha"></div>
+            </div>
+            <div class="cards-one2" data-aos="zoom-in-left" data-aos-duration="1700">
+                <div class="card">
+                    <i class="fa-regular fa-handshake"></i>
+                    <h2>Parcerias</h2>
+                    <p>Estabelecemos parcerias sólidas com empresas comprometidas em apoiar a comunidade sênior. Essas parcerias não apenas oferecem vantagens exclusivas aos nossos membros, como também criam oportunidades de emprego e colaborações significativas.</p>
+                </div>
+                <div class="card-linha"></div>
+            </div>
+            <div class="cards-one3" data-aos="zoom-in-right" data-aos-duration="1900">
+                <div class="card">
+                    <i class="fa-regular fa-comments" style="color: #000000;"></i>
+                    <h2>Fórum</h2>
+                    <p>Nosso fórum de dúvidas é um espaço onde os idosos podem fazer perguntas, compartilhar experiências e encontrar apoio mútuo. Queremos que todos se sintam à vontade para participar, aprender e crescer juntos. Junte-se a nós e faça parte dessa troca enriquecedora de conhecimentos e experiências!</p>
+                </div>
+                <div class="card-linha"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Parcerias----------------------->
+    <section class="section-parcerias" id="cursos-parcerias">
+        <div class="parcerias">
+            <h2>Nossas principais parcerias</h2>
+            <div class="logo-empresas" data-aos="zoom-in" data-aos-duration="1000">
+                <div class="logo-empresas-img1"></div>
+                <div class="logo-empresas-img2"></div>
+                <div class="logo-empresas-img3"></div>
+                <div class="logo-empresas-img4"></div>
+                <div class="logo-empresas-img5"></div>
+                <div class="logo-empresas-img6"></div>
+                <div class="logo-empresas-img7"></div>
+                <div class="logo-empresas-img8"></div>
+                <div class="logo-empresas-img9"></div>
+            </div>
+        </div>
+    </section>
+
+    <!--Lembrete------------------------->
+    <section class="lembrete">
+        <p>Clique nos links e acesse nossos campos de cursos e fórum, aproveite todas as oportunidades para aprender e se conectar. </p>
+        <div class="but-links-externos">
+            <a class="btn" href="cursos.html" target="_blank" rel="external">Cursos</a>
+
+            <a class="btn2" href="forum.html" target="_blank" rel="external">Fórum</a>
+        </div>
+    </section>
+    
+    <!--Formulário--------------------->
+    <section class="section-formulario" id="contatos">
+        <div class="formulario">
+            <!--Infos-form-->
+            <form class="form" action="https://formsubmit.co/web.idosoativo@gmail.com" method="POST" class="form" data-aos="fade-right" data-aos-duration="800"           data-aos-easing="ease-in-sine"> 
+                <label>
+                    <input class="input" type="text" name="name" id="name-secund" required />
+                    <span>Nome</span>
+                </label>
+                
+                <label>
+                    <input class="input" type="email" name="email" id="email" required />
+                    <span>E-mail</span>
+                </label> 
+                
+                <label>
+                    <input class="input" id="phone" type="tel" name="phone" required />
+                    <span>Telefone</span>
+                </label>
+                
+                <label>
+                    <textarea class="input01" rows="3" name="message" id="message" required></textarea>
+                    <span>Mensagem</span>
+                </label>
+                
+                <!--Confere captcha-->
+                <input type="hidden" name="_captcha" value="false"/>
+                <!--end de retorno-->
+                <input
+                type="hidden"
+                name="_next"
+                value="https://rebecamarianosanto.github.io/idoso-ativo-web/obrigado.html"
+              />
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="form-txt">
+            <h3 data-aos="zoom-in" data-aos-duration="800">
+                Gostou da nossa proposta?
+            </h3>
+            <p>
+                Se surgir alguma dúvida ou se precisar de assistência, não hesite em entrar em contato com nossa equipe. Estamos disponíveis em diversos canais de atendimento, prontos para oferecer o suporte necessário e ajudá-lo da da melhor forma possível. Estamos ansiosos para te ouvir e auxiliá-lo em sua jornada conosco.
+            </p>
+        </div>
+    </section>
+
+    <!--Equipe-------------------------->
+    <section class="section-equipe">
+        <div class="equipe-geral">
+            <h2>Conheça nossa equipe</h2>
+            <div class="equipe-infos">
+                <!-- Julio-->
+                <div class="equipe-img-name" data-aos="zoom-in" data-aos-duration="500">
+                    <div class="equipe-img1"></div>
+                    <div class="equipe-name">
+                        <p class="name">Julio Cesar Vargas Divino </p>
+                        <p class="ra">RA: 1769150</p>
+                    </div>
+                </div>
+                <!-- Lucas-->
+                <div class="equipe-img-name" data-aos="zoom-in" data-aos-duration="600">
+                    <div class="equipe-img2"></div>
+                    <div class="equipe-name">
+                        <p class="name">Lucas Cardoso de Godoy </p>
+                        <p class="ra">RA: 1875913</p>
+                    </div>
+                </div>
+                <!--Marcelo -->
+                <div class="equipe-img-name" data-aos="zoom-in" data-aos-duration="700">
+                    <div class="equipe-img3"></div>
+                    <div class="equipe-name">
+                        <p class="name">Marcelo Guilherme de Araujo Martinho </p>
+                        <p class="ra">RA: 1846360</p>
+                    </div>
+                </div>
+                <!-- Rebeca-->
+                <div class="equipe-img-name" data-aos="zoom-in" data-aos-duration="800">
+                    <div class="equipe-img4"></div>
+                    <div class="equipe-name">
+                        <p class="name">Rebeca Mariano do Espirito Santo </p>
+                        <p class="ra">RA: 1691508</p>
+                    </div>
+                </div>
+                <!-- Stephannie-->
+                <div class="equipe-img-name" data-aos="zoom-in" data-aos-duration="900">
+                    <div class="equipe-img5"></div>
+                    <div class="equipe-name">
+                        <p class="name">Stephanie Silva Souza </p>
+                        <p class="ra">RA: 1812387</p>
+                    </div>
+                </div>
+                <!-- Vitor-->
+                <div class="equipe-img-name" data-aos="zoom-in" data-aos-duration="1000">
+                    <div class="equipe-img6"></div>
+                    <div class="equipe-name">
+                        <p class="name">Vitor Hugo Calça </p>
+                        <p class="ra">RA:1708160</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Contatos-------------------------->
+    <section class="section-contatos">
+        <h3>Contatos</h3>
+        <div class="contatos-web">
+            <a href="mailto:web.idosoativo@gmail.com?subject=Website-%20Idoso%20ativo%20-%20Preciso%20de%20informa%C3%A7%C3%A3o!" target="_blank" rel="external"><i class="fa-solid fa-envelope-open-text rotate-scale-down"></i> web.idosoativo@gmail.com</a>
+            <div class="num-contatos">
+                <p><i class="fa-solid fa-phone-volume rotate-scale-down"></i> (11)4111-2000</p>
+                <p><i class="fa-brands fa-whatsapp rotate-scale-down"></i> (11)95000-2111</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer----------------------->
+    <footer>
+        <!--logo-->
+        <div class="footer-infos">
+            <div class="logo-footer">
+                <i class="fa-solid fa-circle"></i>
+                <p>Idosos na ativa</p>
+            </div>
+            <!--links-->
+            <div class="links-footer">
+                <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+
+                <a href="#sobre"><i class="fa-solid fa-users" style="color: #000000;"></i> Sobre nós</a>
+    
+                <a href="#cursos-parcerias"><i class="fa-solid fa-book" style="color: #000000;"></i> Cursos e Parcerias</a>
+    
+                <a href="forum.html" target="_blank" rel="external"><i class="fa-regular fa-comments" style="color: #000000;"></i> Fórum</a>
+            </div>
+            <!--contatos-->
+            <div class="contatos-footer">
+                <div class="num-contatos-footer">
+                    <p><i class="fa-solid fa-envelope-open-text"></i> web.idosoativo@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> (11)4111-2000</p>
+                    <p><i class="fa-brands fa-whatsapp"></i> (11)95000-2111</p>
+                </div>
+            </div>
+        </div>
+
+        <!--considerações finais-->
+        <div class="footer-end">
+            <p>Copyright © 2024. Alguns direitos reservados.</p>
+            <p>Imagens meramente ilustrativas - Crédito Unsplash</p>
+            <p>Desenvolvido por nossa equipe para trabalho FMU - Lab. Software e Projetos</p>
+        </div>
+    </footer>
+    
+    
+    <!---scripts js---------------->
+
+    <!-- js botão-menu-mobile ------------->
+    <script src="animar.js"></script>
+    <!-- JS animação AOS -->
+    <script>
+        AOS.init();
+    </script> 
+        
+</body>
+</html>
