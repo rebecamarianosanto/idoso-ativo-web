@@ -6,6 +6,7 @@
     <title>Idosos na ativa</title>
     <!--CSS HOME-->
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 
     <!--Link biblioteca Font Awsome - icons-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
@@ -17,8 +18,6 @@
     <!-- JS btn-mobile -->
     <link rel="stylesheet" href="animar.js">
 
-    <!--JS Formulário-->
-    <link rel="stylesheet" href="form.js">
 </head>
 
 <body>
@@ -59,18 +58,23 @@
     <main>
         <div class="main-info">
             <div class="title-txt">
-                <div class="title">
-                    <p>A força da</p>
-                    <h1>Experiência</h1>
+                <div class="title" >
+                    <p class="scale-up-center">A força da</p>
+
+                    <h1 class="img-main" data-aos="fade-zoom"
+                    data-aos-duration="1500"
+                    data-aos-easing="ease-in-sine">Experiência</h1>
                 </div>
                 <div class="main-txt">
                     <p>Junte-se a nós e descubra o poder da comunidade, um espaço online feito sob medida para inspirar e capacitar idosos ativos para uma vida mais plena, onde a experiência é o nosso superpoder!</p>
                 </div>
-                <div class="button-main">
+                <div class="button-main scale-up-center">
                     <a class="btn-main" href="#sobre">SAIBA MAIS</a>
                 </div>
             </div>
-            <div class="img-main">
+            <div class="img-main" data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-sine">
                 <div class="img-foto-main"></div>
             </div>
 
@@ -130,7 +134,7 @@
     <section class="section-parcerias" id="cursos-parcerias">
         <div class="parcerias">
             <h2>Nossas principais parcerias</h2>
-            <div class="logo-empresas">
+            <div class="logo-empresas" data-aos="zoom-in" data-aos-duration="1000">
                 <div class="logo-empresas-img1"></div>
                 <div class="logo-empresas-img2"></div>
                 <div class="logo-empresas-img3"></div>
@@ -155,51 +159,43 @@
     </section>
     
     <!--Formulário--------------------->
-    <section class="form-duvidas" id="contatos">
+    <section class="section-formulario" id="contatos">
         <div class="formulario">
-            <form class="form"
-            action="https://formsubmit.co/web.idosoativo@gmail.com" 
-            method="POST"
-            data-form
-            >
-
-                <div class="flex">
-                    <label>
-                        <input required="" placeholder="" type="text" class="input">
-                        <span>Nome</span>
-                    </label>
-            
-                    <label>
-                        <input required="" placeholder="" type="text" class="input">
-                        <span>Sobrenome</span>
-                    </label>
-                </div>  
-                        
+            <!--Infos-form-->
+            <form class="form" action="https://formsubmit.co/web.idosoativo@gmail.com" method="POST" class="form" data-aos="fade-right" data-aos-duration="800"           data-aos-easing="ease-in-sine"> 
                 <label>
-                    <input required="" placeholder="" type="email" class="input">
+                    <input class="input" type="text" name="name" id="name-secund" required />
+                    <span>Nome</span>
+                </label>
+                
+                <label>
+                    <input class="input" type="email" name="email" id="email" required />
                     <span>E-mail</span>
                 </label> 
-                    
+                
                 <label>
-                    <input required="" type="tel" placeholder="" class="input">
-                    <span>Contato</span>
+                    <input class="input" id="phone" type="tel" name="phone" required />
+                    <span>Telefone</span>
                 </label>
+                
                 <label>
-                    <textarea required="" rows="3" placeholder="" class="input01"></textarea>
+                    <textarea class="input01" rows="3" name="message" id="message" required></textarea>
                     <span>Mensagem</span>
                 </label>
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/obrigado-idoso-na-ativa">
                 
-                <button type="submit" data-button class="fancy" href="https://formsubmit.co/web.idosoativo@gmail.com">
-                  <span class="top-key"></span>
-                  <span class="text">Enviar</span>
-                  <span class="bottom-key-1"></span>
-                  <span class="bottom-key-2"></span>
-                </button>
+                <!--Confere captcha-->
+                <input type="hidden" name="_captcha" value="false"/>
+                <!--end de retorno-->
+                <input
+                type="hidden"
+                name="_next"
+                value="http://127.0.0.1:5500/Obrigado.html"
+              />
+                <button type="submit">Enviar</button>
             </form>
         </div>
         <div class="form-txt">
-            <h3>
+            <h3 data-aos="zoom-in" data-aos-duration="800">
                 Gostou da nossa proposta?
             </h3>
             <p>
@@ -214,7 +210,7 @@
             <h2>Conheça nossa equipe</h2>
             <div class="equipe-infos">
                 <!-- Julio-->
-                <div class="equipe-img-name">
+                <div class="equipe-img-name" data-aos="zoom-in" data-aos-duration="500">
                     <div class="equipe-img1"></div>
                     <div class="equipe-name">
                         <p class="name">Julio Cesar Vargas Divino </p>
@@ -222,7 +218,7 @@
                     </div>
                 </div>
                 <!-- Lucas-->
-                <div class="equipe-img-name">
+                <div class="equipe-img-name" data-aos="zoom-in" data-aos-duration="600">
                     <div class="equipe-img2"></div>
                     <div class="equipe-name">
                         <p class="name">Lucas Cardoso de Godoy </p>
@@ -230,7 +226,7 @@
                     </div>
                 </div>
                 <!--Marcelo -->
-                <div class="equipe-img-name">
+                <div class="equipe-img-name" data-aos="zoom-in" data-aos-duration="700">
                     <div class="equipe-img3"></div>
                     <div class="equipe-name">
                         <p class="name">Marcelo Guilherme de Araujo Martinho </p>
@@ -238,7 +234,7 @@
                     </div>
                 </div>
                 <!-- Rebeca-->
-                <div class="equipe-img-name">
+                <div class="equipe-img-name" data-aos="zoom-in" data-aos-duration="800">
                     <div class="equipe-img4"></div>
                     <div class="equipe-name">
                         <p class="name">Rebeca Mariano do Espirito Santo </p>
@@ -246,7 +242,7 @@
                     </div>
                 </div>
                 <!-- Stephannie-->
-                <div class="equipe-img-name">
+                <div class="equipe-img-name" data-aos="zoom-in" data-aos-duration="900">
                     <div class="equipe-img5"></div>
                     <div class="equipe-name">
                         <p class="name">Stephanie Silva Souza </p>
@@ -254,7 +250,7 @@
                     </div>
                 </div>
                 <!-- Vitor-->
-                <div class="equipe-img-name">
+                <div class="equipe-img-name" data-aos="zoom-in" data-aos-duration="1000">
                     <div class="equipe-img6"></div>
                     <div class="equipe-name">
                         <p class="name">Vitor Hugo Calça </p>
@@ -270,10 +266,10 @@
     <section class="section-contatos">
         <h3>Contatos</h3>
         <div class="contatos-web">
-            <a href="mailto:web.idosoativo@gmail.com?subject=Website-%20Idoso%20ativo%20-%20Preciso%20de%20informa%C3%A7%C3%A3o!" target="_blank" rel="external"><i class="fa-solid fa-envelope-open-text"></i> web.idosoativo@gmail.com</a>
+            <a href="mailto:web.idosoativo@gmail.com?subject=Website-%20Idoso%20ativo%20-%20Preciso%20de%20informa%C3%A7%C3%A3o!" target="_blank" rel="external"><i class="fa-solid fa-envelope-open-text rotate-scale-down"></i> web.idosoativo@gmail.com</a>
             <div class="num-contatos">
-                <p><i class="fa-solid fa-phone-volume"></i> (11)4111-2000</p>
-                <p><i class="fa-brands fa-whatsapp"></i> (11)95000-2111</p>
+                <p><i class="fa-solid fa-phone-volume rotate-scale-down"></i> (11)4111-2000</p>
+                <p><i class="fa-brands fa-whatsapp rotate-scale-down"></i> (11)95000-2111</p>
             </div>
         </div>
     </section>
@@ -319,8 +315,6 @@
 
     <!-- js botão-menu-mobile ------------->
     <script src="animar.js"></script>
-    <!--Js Formulário-->
-    <script src="form.js"></script>
     <!-- JS animação AOS -->
     <script>
         AOS.init();
