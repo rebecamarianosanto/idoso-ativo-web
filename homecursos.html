@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idosos na Ativa</title>
+    <link rel="stylesheet" href="homecursos.css">
+
+    <!--Link biblioteca Font Awsome - icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+
+    <!-- Animação AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- JS btn-mobile -->
+    <script src="animar.js"></script>
+</head>
+
+<body>
+    <!-- Cabeçalho ------------------------------>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-circle"></i>
+            <p>Idosos na Ativa</p>
+        </div>
+        <div class="links-cabecalho">
+            <a href="index.html">Home</a>
+            <a href="#cursos">Cursos</a>
+            <a href="#contatos">Contatos</a>
+        </div>
+        <!-- BOTÃO MOBILE --------------------->
+        <button onclick="animarMenu()" id="btn-menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- MENU MOBILE --------------------->
+        <div class="menu-mobile" id="menu-mobile">
+            <a href="index.html"><i class="fa-solid fa-house"></i>Home</a>
+            <a href="#sobre"><i class="fa-solid fa-users" style="color: #000000;"></i> Sobre nós</a>
+            <a href="#cursos"><i class="fa-solid fa-book" style="color: #000000;"></i> Cursos e Parcerias</a>
+            <a href="#contatos"><i class="fa-solid fa-phone" style="color: #030303;"></i> Contatos</a>
+        </div>
+    </header>
+
+    <!-- Principal -->
+    <main>
+        <div class="img-principal">
+            <div class="img-foto kenburns-left"></div>
+        </div>
+        <div class="infos-principal">
+            <div class="titulo-principal">
+                <div class="m-titulo-principal" data-aos="zoom-in" data-aos-delay="500">
+                    <h2>Um espaço para novas Experiências</h2>
+                </div>
+                <div class="g-titulo-principal" data-aos="zoom-in" data-aos-delay="850">
+                    <h1>Veja o mundo de outra forma através da aprendizagem</h1>
+                </div>
+            </div>
+            <div class="slogan-principal">
+                <p>Oferecemos uma variedade de cursos feitos sob medida para inspirar e capacitar idosos
+                    ativos,promovendo uma vida mais plena e enriquecedora. Confira abaixo!</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Seção Cursos -->
+    <section class="secao-cursos" id="cursos">
+        <div class="cursos">
+            <h2>Nossos Cursos Gratuitos</h2>
+            <p>Cursos breves e gratuitos de fácil compreensão.</p>
+            <br><br>
+            <div class="container-cursos">
+                <div class="curso" data-aos="zoom-in-right" data-aos-duration="1500">
+                    <div class="cartao">
+                        <i class="fa-solid fa-mobile" style="color: #000000;"></i>
+                        <h2>Introdução ao Celular</h2>
+                        <p>Este curso é perfeito para quem deseja aprender o básico sobre o uso de celulares. Desde como
+                            ligar o aparelho até enviar mensagens e acessar a internet.</p>
+                        <a href="CELULARMOD1.html" class="btn-curso" target="_blank">Comece Agora</a>
+                    </div>
+                </div>
+                <div class="curso" data-aos="zoom-in-left" data-aos-duration="1700">
+                    <div class="cartao">
+                        <i class="fa-solid fa-desktop" style="color: #000000;"></i>
+                        <h2>Introdução ao Computador</h2>
+                        <p>Aprenda a utilizar o computador de maneira eficiente. Este curso aborda os conceitos básicos,
+                            como usar o teclado e o mouse, navegar na internet e utilizar programas básicos.</p>
+                        <a href="CELULARMOD1.html" class="btn-curso" target="_blank">Comece Agora</a>
+                    </div>
+                </div>
+                <div class="curso" data-aos="zoom-in-left" data-aos-duration="1900">
+                    <div class="cartao">
+                        <i class="fa-solid fa-paint-brush" style="color: #000000;"></i>
+                        <h2>Introdução Windows Paint</h2>
+                        <p>Este curso ensina como usar o Paint, um programa de edição de imagens básico no Windows.
+                            Ideal para quem deseja aprender a fazer edições simples e desenhos no computador.</p>
+                        <a href="CELULARMOD1.html" class="btn-curso" target="_blank">Comece Agora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Cursos em Vídeo -->
+    <section class="secao-cursos-video">
+        <div class="cursos-video">
+            <h2>Aprendizagem em vídeo</h2>
+            <p>Acompanhe o passo a passo, não tem como errar essa não é?.</p>
+            <br><br>
+            <div class="container-cursos-video">
+                <div class="curso-video" data-aos="zoom-in-right" data-aos-duration="1500">
+                    <div class="cartao-video">
+                        <h2>Videoaulas de Tecnologia</h2>
+                        <p>As videoaulas disponíveis irão te ajudar neste mundo atual, onde o que era luxo hoje é
+                            necessidade.</p>
+                        <a href="vaulas.html" class="btn-curso-video" target="_blank">Confira</a>
+                    </div>
+                </div>
+                <div class="curso-video" data-aos="zoom-in-left" data-aos-duration="1700">
+                    <div class="cartao-video">
+                        <h2>Videoaulas Artisticas</h2>
+                        <p>Desde ilustrações a manufaturas. A arte é uma otima forma de manter nossa mente trabalhando.
+                            Com isso também criamos coisas incríveis!</p>
+                        <a href="vaulas.html" class="btn-curso-video" target="_blank">Confira</a>
+                    </div>
+                </div>
+                <div class="curso-video" data-aos="zoom-in-left" data-aos-duration="1900">
+                    <div class="cartao-video">
+                        <h2>Videoaulas sobre Direito</h2>
+                        <p>Aprenda sobre direito para compreender seus direitos e o funcionamento jurídico da união.
+                            Fortaleça sua capacidade de tomar decisões informadas e tenha uma visão clara do mundo
+                            jurídico.</p>
+                        <a href="vaulas.html" class="btn-curso-video" target="_blank">Confira</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-parcerias" id="cursos-parcerias">
+        <div class="parcerias">
+            <h2>Nossas Principais Parcerias</h2>
+            <p>Além de nossos conteúdos, você tabém pode extender seu conhecimento e aprendizagem com os nossos
+                parceiros. Clique e Confira!</p>
+            <div class="logo-empresas">
+                <a href="https://www.cursoemvideo.com" target="_blank" rel="noopener noreferrer">
+                    <div class="logo-empresas-img4"></div>
+                </a>
+                <a href="https://www.ev.org.br" target="_blank" rel="noopener noreferrer">
+                    <div class="logo-empresas-img5"></div>
+                </a>
+                <a href="https://www.escolavirtual.gov.br" target="_blank" rel="noopener noreferrer">
+                    <div class="logo-empresas-img6"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Contatos-->
+    <section class="section-contatos" id="contatos">
+        <h3>Contatos</h3>
+        <div class="contatos-web">
+            <a href="mailto:web.idosoativo@gmail.com?subject=Website-%20Idoso%20ativo%20-%20Preciso%20de%20informa%C3%A7%C3%A3o!"
+                target="_blank" rel="external"><i class="fa-solid fa-envelope-open-text"></i>
+                web.idosoativo@gmail.com</a>
+            <div class="num-contatos">
+                <p><i class="fa-solid fa-phone-volume"></i> (11)4111-2000</p>
+                <p><i class="fa-brands fa-whatsapp"></i> (11)95000-2111</p>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-infos">
+            <div class="logo-footer">
+                <i class="fa-solid fa-circle"></i>
+                <p>Idosos na Ativa</p>
+            </div>
+            <div class="links-footer">
+                <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#cursos"><i class="fa-solid fa-book" style="color: #000000;"></i> Cursos</a>
+                <a href="forum.html"><i class="fa-regular fa-comments" style="color: #000000;"></i> Fórum</a>
+            </div>
+            <div class="contatos-footer">
+                <div class="num-contatos-footer">
+                    <p><i class="fa-solid fa-envelope-open-text"></i> web.idosoativo@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> (11)4111-2000</p>
+                    <p><i class="fa-brands fa-whatsapp"></i> (11)95000-2111</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+            <p>Copyright © 2024. Alguns direitos reservados.</p>
+            <p>Imagens meramente ilustrativas - Crédito Unsplash</p>
+            <p>Desenvolvido por nossa equipe para trabalho FMU - Lab. Software e Projetos</p>
+        </div>
+    </footer>
+
+    <!-- js botão-menu-mobile -->
+    <script src="animar.js"></script>
+    <!-- JS animação AOS -->
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
