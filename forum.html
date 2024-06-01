@@ -1,18 +1,179 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fórum</title>
+    <title>Idoso Ativo - Fórum</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Link biblioteca Font Awesome - icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Animação AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
+
 <body>
-    <h1>Fórum</h1>
 
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-circle"></i>
+            <p>Idoso Ativo</p>
+        </div>
+        <div class="header-links">
+            <a href="index.html">Home</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#cursos">Cursos e Parcerias</a>
+            <a href="forum.html" target="_blank" rel="external">Fórum</a>
+            <a href="#contatos">Contatos</a>
+        </div>
+        <!-- BOTÃO MOBILE --------------------->
+        <button onclick="animarMenu()" id="btn-menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <!-- MENU MOBILE --------------------->
+        <div class="menu-mobile" id="menu-mobile">
+            <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="#sobre"><i class="fa-solid fa-users"></i> Sobre nós</a>
+            <a href="#cursos"><i class="fa-solid fa-book"></i> Cursos e Parcerias</a>
+            <a href="forum.html" target="_blank" rel="external"><i class="fa-regular fa-comments"></i> Fórum</a>
+            <a href="#contatos"><i class="fa-solid fa-phone"></i> Contatos</a>
+        </div>
+    </header>
 
+    <section>
+        <div class="container">
+            <form id="forumForm" class="text-content-center">
+                <h1 class="text-center">Fórum de Dúvidas</h1>
+                <div id="perguntasContainer" class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label for="nome">Nome:</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Digite Seu Nome Completo">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <label for="duvida">Dúvidas:</label>
+                            <input type="text" class="form-control" id="duvida" placeholder="Escreva sua dúvida aqui.">
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <button type="button" class="btn btn-primary" onclick="adicionarPergunta()">Adicionar Pergunta</button>
+                    
+                </div>
+            </form>
 
+            <div id="forumContainer" class="container text-center mt-5">
+                <div class="row text-center">
+                    <div class="col-xl-4 border"><h2>Usuário:</h2></div>
+                    <div class="col-xl-4 border"><h2>Pergunta:</h2></div>
+                    <div class="col-xl-4 border"><h2>Respostas:</h2></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-<!--Botão de voltar a página principal-->
-    <a href="./index.html"> PARA VOLTAR PARA A HOME CLIQUE AQUI... </a>
-    
+    <footer >
+        <div class="footer-infos">
+            <div class="logo-footer">
+                <i class="fa-solid fa-circle"></i>
+                <p>Idoso Ativo</p>
+            </div>
+            <div class="links-footer">
+                <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#sobre"><i class="fa-solid fa-users"></i> Sobre nós</a>
+                <a href="#cursos"><i class="fa-solid fa-book"></i> Cursos e Parcerias</a>
+                <a href="#forun"><i class="fa-regular fa-comments"></i> Fórum</a>
+            </div>
+            <div class="contatos-footer">
+                <div class="num-contatos-footer">
+                    <p><i class="fa-solid fa-envelope-open-text"></i> web.idosoativo@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> (11)4111-2000</p>
+                    <p><i class="fa-brands fa-whatsapp"></i> (11)95000-2111</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-end">
+            <p>Copyright © 2024. Alguns direitos reservados.</p>
+            <p>Imagens meramente ilustrativas - Crédito Unsplash</p>
+            <p>Desenvolvido por nossa equipe para trabalho FMU - Lab. Software e Projetos</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+     <!-- js botão-menu-mobile ------------->
+     <script src="animar.js"></script>
+     <!-- JS animação AOS -->
+     <script>
+         AOS.init();
+     </script> 
+
+    <script>
+        function adicionarPergunta() {
+            const nome = document.getElementById('nome').value;
+            const duvida = document.getElementById('duvida').value;
+
+            if (nome && duvida) {
+                const forumContainer = document.getElementById('forumContainer');
+                const div = document.createElement('div');
+                div.classList.add('row', 'text-center', 'mt-3');
+                div.innerHTML = `
+                    <div class="col-xl-4 border"><h4>${nome}</h4></div>
+                    <div class="col-xl-4 border"><h4>${duvida}</h4></div>
+                    <div class="col-xl-4 border">
+                        <button type="button" class="btn btn-secondary" onclick="mostrarCampoResposta(this)">Responder</button>
+                        <div class="respostas mt-2"></div>
+                    </div>
+                `;
+                forumContainer.appendChild(div);
+
+                // Limpar campos de entrada
+                document.getElementById('nome').value = '';
+                document.getElementById('duvida').value = '';
+            } else {
+                alert('Por favor, preencha todos os campos obrigatórios.');
+            }
+        }
+
+        function mostrarCampoResposta(button) {
+            const respostaDiv = document.createElement('div');
+            respostaDiv.classList.add('form-group', 'mt-2');
+            respostaDiv.innerHTML = `
+                <input type="text" class="form-control" placeholder="Digite sua resposta">
+                <button type="button" class="btn btn-primary mt-2" onclick="adicionarResposta(this)">Adicionar Resposta</button>
+            `;
+            button.parentElement.querySelector('.respostas').appendChild(respostaDiv);
+        }
+
+        function adicionarResposta(button) {
+            const respostaInput = button.previousElementSibling;
+            const respostaTexto = respostaInput.value;
+
+            if (respostaTexto) {
+                const respostaDiv = document.createElement('div');
+                respostaDiv.classList.add('border', 'p-2', 'mt-2');
+                respostaDiv.innerHTML = `<p>${respostaTexto}</p>`;
+                button.parentElement.parentElement.appendChild(respostaDiv);
+
+                // Remover campo de resposta
+                button.parentElement.remove();
+            } else {
+                alert('Por favor, digite uma resposta.');
+            }
+        }
+
+        function enviarFormulario() {
+            // Implementar lógica de envio de formulário, se necessário.
+            alert('Formulário enviado!');
+        }
+    </script>
 </body>
+
 </html>
