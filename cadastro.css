@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Archivo+Black&family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@100..900&display=swap');
+
+/*fonts*/
+:root {
+    --font-x1: clamp(1.7rem, 3vw + 0.1rem, 2.4rem);
+    --font-md: clamp(1rem, 1vw + 0.1rem, 2rem);
+    --font-md0: clamp(1.2rem, 1vw + 0.1rem, 2rem);
+    --font-md1: clamp(2rem, 5vw + 0.1rem, 1.8rem);
+    --font-title: clamp(1.5rem, 2.5vw, 4rem);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    outline: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header**************/
+header {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 15px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    background-color: #fff;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 10px;
+    margin-left: 1.5rem;
+}
+
+.logo i {
+    color: #017A8F;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.logo p {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.header-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 5px;
+    margin-right: 1rem;
+}
+
+.header-links a {
+    font-weight: 500;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #000;
+    font-size: min(max(15px, 2vw), 16px);
+    padding: 15px;
+    text-decoration: 3px solid transparent;
+
+}
+
+.header-links a:hover {
+    font-weight: 600;
+    margin-top: -2px;
+    text-decoration: 3px solid underline;
+}
+
+/* MENU MOBILE ****************/
+.menu-mobile {
+    background-color: #f1f1f1;
+    position: absolute;
+    top: calc(10vh);
+    left: 0;
+    width: 100%;
+    height: auto;
+    visibility: hidden;
+    transition: 0.4s;
+    overflow: hidden;
+}
+
+.menu-mobile a {
+    margin-top: 1rem;
+    font-family: 'Poppins';
+    color: #000;
+    letter-spacing: 0.8px;
+    text-decoration: none;
+    display: block;
+    padding: 20px 30px;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+}
+
+.menu-mobile i {
+    font-size: 30px;
+    color: #010208;
+}
+
+.menu-mobile a:hover {
+    background-color: #6666;
+}
+
+/*Botão mobile ******************/
+#btn-menu {
+    background-color: transparent;
+    color: #010208;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 40px;
+    transition: .2s;
+    display: none;
+}
+
+/*main*/
+main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 40px;
+}
+
+.main-info {
+    width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
+.title-txt {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 10px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+    font-size: var(--font-title);
+}
+
+.title p {
+    font-family: inherit;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+.title h1 {
+    text-transform: uppercase;
+    text-decoration: underline blue;
+    font-weight: 800;
+}
+
+.main-txt {
+    width: 97%;
+    padding: 10px 12px;
+    letter-spacing: 0.2px;
+    font-size: var(--font-md);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.button-main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.btn-main {
+    display: inline-block;
+    text-align: center;
+    padding: 5px 3.2rem;
+    font-size: var(--font-md);
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: #010208;
+    border: 2px solid #010208;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    background-color: #fff;
+    text-decoration: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-main::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    color: #be1a1a;
+    background-color: #010208;
+    transform: translateX(-100%);
+    transition: all .3s;
+    z-index: -1;
+}
+
+.btn-main:hover {
+    color: #fff;
+}
+
+.btn-main:hover::before {
+    transform: translateX(0);
+}
+
+.img-main {
+    width: 50%;
+}
+
+.img-foto-main {
+    width: 100%;
+}
+
+footer {
+    margin-top: 3rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+    color: #000;
+}
+
+.footer-infos {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px;
+    gap: 1rem;
+
+}
+
+.logo-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    cursor: pointer;
+    ;
+}
+
+.logo-footer i {
+    color: #017A8F;
+    font-size: 10px;
+    padding: 5px;
+}
+
+.logo-footer p {
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.links-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 7px;
+}
+
+.links-footer a {
+    display: flex;
+    color: #000;
+    text-transform: uppercase;
+    font-size: var(--font-md);
+    font-weight: 500;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.links-footer a:hover {
+    border-bottom: 2px solid #000;
+}
+
+.links-footer i {
+    font-size: var(--font-md);
+    margin-right: 10px;
+    border-bottom: none;
+}
+
+.contatos-footer {
+    padding: 5px;
+}
+
+.num-contatos-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+
+.num-contatos-footer p {
+    cursor: pointer;
+    font-size: var(--font-md);
+    font-weight: 400;
+    color: #000;
+}
+
+.num-contatos-footer i {
+    font-size: 22px;
+    color: #000;
+}
+
+.footer-end {
+    border-top: 1px solid #333;
+    background-color: #000;
+    color: #fff;
+    font-size: var(--font-md);
+    text-align: center;
+    letter-spacing: 0.5;
+    padding: 10px;
+}
+
+.footer-end p {
+    padding: 2px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cadastro-form {
+    text-align: center;
+}
+
+.cadastro-form h2 {
+    font-size: 2rem;
+    color: #000;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cadastro-form p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cadastro-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cadastro-form label {
+    font-size: 1rem;
+    color: #333;
+    text-align: left;
+    margin-bottom: 5px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cadastro-form input,
+.cadastro-form select {
+    font-size: 1rem;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+    width: 100%;
+}
+
+.cadastro-form input:focus,
+.cadastro-form select:focus {
+    border-color: #017a8f;
+    outline: none;
+}
+
+.cadastro-form button {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #fff;
+    background-color: #017a8f;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.cadastro-form button:hover {
+    background-color: #015f6d;
+}
+
+.cadastro-form p {
+    font-size: 0.9rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cadastro-form a {
+    color: #017a8f;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.cadastro-form a:hover {
+    color: #015f6d;
+}

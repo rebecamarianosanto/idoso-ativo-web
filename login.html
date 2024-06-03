@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Idosos na ativa</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Header ------------------------------>
+    <header>
+        <div class="logo">
+            <i class="fa-solid fa-circle"></i>
+            <p>Idosos na ativa</p>
+        </div>
+        <div class="header-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#sobre">Sobre nós</a>
+            <a href="index.html#cursos-parcerias">Cursos e Parcerias</a>
+            <a href="index.html#contatos">Contatos</a>
+            <a href="forum.html" target="_blank" rel="external">Fórum</a>
+        </div>
+        <button onclick="animarMenu()" id="btn-menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="menu-mobile" id="menu-mobile">
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="index.html#sobre"><i class="fa-solid fa-users" style="color: #000000;"></i> Sobre nós</a>
+            <a href="index.html#cursos-parcerias"><i class="fa-solid fa-book" style="color: #000000;"></i> Cursos e
+                Parcerias</a>
+            <a href="index.html#contatos"><i class="fa-solid fa-phone" style="color: #030303;"></i> Contatos</a>
+            <a href="forum.html" target="_blank" rel="external"><i class="fa-regular fa-comments"
+                    style="color: #000000;"></i> Fórum</a>
+        </div>
+    </header>
+
+    <!-- Main Login Form ---------------------->
+    <main>
+        <div class="login-container">
+            <div class="login-form">
+                <h2>Bem-vindo!</h2>
+                <p>Faça seu Login abaixo e aproveite este espaço feito para você!</p>
+                <form action="index.html" method="POST">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Senha:</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit">Entrar</button>
+                </form>
+                <p>Não tem uma conta? <a href="cadastro.html">Registre-se</a></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -------------------------->
+    <footer>
+        <!--logo-->
+        <div class="footer-infos">
+            <div class="logo-footer">
+                <i class="fa-solid fa-circle"></i>
+                <p>Idosos na ativa</p>
+            </div>
+            <!--links-->
+            <div class="links-footer">
+                <a href="#"><i class="fa-solid fa-house"></i> Home</a>
+                <a href="#sobre"><i class="fa-solid fa-users" style="color: #000000;"></i> Sobre nós</a>
+                <a href="#cursos-parcerias"><i class="fa-solid fa-book" style="color: #000000;"></i> Cursos e
+                    Parcerias</a>
+                <a href="forum.html" target="_blank" rel="external"><i class="fa-regular fa-comments"
+                        style="color: #000000;"></i> Fórum</a>
+            </div>
+            <!--contatos-->
+            <div class="contatos-footer">
+                <div class="num-contatos-footer">
+                    <p><i class="fa-solid fa-envelope-open-text"></i> web.idosoativo@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> (11)4111-2000</p>
+                    <p><i class="fa-brands fa-whatsapp"></i> (11)95000-2111</p>
+                </div>
+            </div>
+        </div>
+
+        <!--considerações finais-->
+        <div class="footer-end">
+            <p>Copyright © 2024. Alguns direitos reservados.</p>
+            <p>Imagens meramente ilustrativas - Crédito Unsplash</p>
+            <p>Desenvolvido por nossa equipe para trabalho FMU - Lab. Software e Projetos</p>
+        </div>
+    </footer>
+</body>
+
+</html>
