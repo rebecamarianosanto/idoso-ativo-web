@@ -25,7 +25,7 @@
             <a href="homecursos.html">Cursos</a>
             <a href="login.html">Login</a>
         </div>
-        <!-- BOTÃO MOBILE -->
+
         <button onclick="toggleMenu()" id="btn-menu">
             <i class="fa-solid fa-bars"></i>
         </button>
@@ -67,7 +67,7 @@
             <section id="video1" class="video-section">
                 <h2>Como sair do zero no Excel - Curso básico em 120 minutos</h2><br>
                 <div class="video-container">
-                    <!-- Video 1: Tecnologia -->
+
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/xrXYpn-wqIk" frameborder="0"
                         allowfullscreen></iframe>
                 </div>
@@ -88,7 +88,7 @@
             <section id="video2" class="video-section">
                 <h2>Curso Básico de Informática 2020 - SISTEMA OPERACIONAL WINDOWS 10 PARA INICIANTES</h2><br>
                 <div class="video-container">
-                    <!-- Video 2: Tecnologia -->
+
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/OV_9PD-72Iw?si=tyoSyjKWQxj_QMUb"
                         frameborder="0" allowfullscreen></iframe>
                 </div>
@@ -112,7 +112,7 @@
             <section id="video3" class="video-section">
                 <h2>DOCINHOS EM BISCUIT: LIVRE-SE DOS MOLDES COM ESSE MÉTODO FÁCIL!</h2><br>
                 <div class="video-container">
-                    <!-- Video 2: Artes -->
+
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/LxCBF42hrM4?si=6Zdd9oLPNZTw-jG7"
                         frameborder="0" allowfullscreen></iframe>
                 </div>
@@ -133,7 +133,7 @@
                 <h2>FAÇA VOCÊ MESMO CAIXA ORGANIZADORA DE PAPELÃO PARA SUA CASA
                 </h2><br>
                 <div class="video-container">
-                    <!-- Video 3: Direito -->
+
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/nVvC4lKorT4?si=xwIJyGxxOdUGHNmy"
                         frameborder="0" allowfullscreen></iframe>
                 </div>
@@ -168,7 +168,7 @@
             <section id="curso1" class="video-section">
                 <h2>Direito dos Idosos: O que são e como surgiram? | Projeto Equidade</h2><br>
                 <div class="video-container">
-                    <!-- Video 2: Direito -->
+
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/AIqpYv4uxbo" frameborder="0"
                         allowfullscreen></iframe>
                 </div>
@@ -187,7 +187,7 @@
             <section id="curso2" class="video-section">
                 <h2>RESUMO de DIREITO - NOÇÕES para INICIANTES, LEIGOS e NÃO ADVOGADOS</h2><br>
                 <div class="video-container">
-                    <!-- Video 2: Direito -->
+
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/MZjZlffVOCs?si=n7CVQleasFlmjfi2"
                         frameborder="0" allowfullscreen></iframe>
                 </div>
@@ -261,23 +261,23 @@
 
     <script>
         function showSection(sectionId) {
-            // Oculta o elemento com a classe 'containerintroduc'
+
             var containerIntroduc = document.querySelector('.containerintroduc');
             containerIntroduc.style.display = 'none';
 
-            // Oculta todas as seções de vídeo
+
             var sections = document.querySelectorAll('.video-section');
             sections.forEach(function (section) {
                 section.classList.remove('active');
             });
 
-            // Exibe apenas a seção correspondente ao ID clicado
+
             var selectedSection = document.getElementById(sectionId);
             selectedSection.classList.add('active');
 
-            // Rola a página até o início da seção e subtrai um valor fixo para garantir que não seja centralizado
+
             window.scrollTo({
-                top: selectedSection.offsetTop - 100, // Substitua 100 pelo valor desejado
+                top: selectedSection.offsetTop - 100,
                 behavior: 'smooth'
             });
         }

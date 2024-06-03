@@ -35,7 +35,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Header */
+
 header {
     width: 100%;
     height: 10vh;
@@ -98,7 +98,7 @@ header {
     text-decoration: 3px solid underline;
 }
 
-/* MENU MOBILE */
+
 .menu-mobile {
     background-color: #f1f1f1;
     position: absolute;
@@ -133,7 +133,7 @@ header {
     background-color: #6666;
 }
 
-/* Botão mobile */
+
 #btn-menu {
     background-color: transparent;
     color: #010208;
@@ -150,7 +150,7 @@ header {
     display: none;
 }
 
-/* Main */
+
 main {
     width: 100%;
     min-height: 50vh;
@@ -183,7 +183,7 @@ main {
 
 }
 
-/* Seção Cursos */
+
 .secao-cursos {
     width: 100%;
     height: auto;
@@ -235,9 +235,7 @@ main {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-/*curso-em-video*/
 
-/* Estilos para a seção de cursos em vídeo */
 .secao-cursos-video {
     width: 100%;
     height: auto;
@@ -322,8 +320,7 @@ main {
     font-size: var(--font-md);
 }
 
-/* Seção Contatos */
-/*contatos*/
+
 .section-contatos {
     background-color: #c6e8ee;
     width: 100%;
@@ -386,7 +383,7 @@ main {
     margin-right: 10px;
 }
 
-/*footer*/
+
 footer {
     margin-top: 3rem;
     width: 100%;
@@ -494,7 +491,7 @@ footer {
     padding: 2px;
 }
 
-/*parcerias*/
+
 .section-parcerias {
     width: 100%;
     height: auto;
@@ -541,9 +538,8 @@ footer {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    /* Centraliza as imagens horizontalmente */
     align-items: center;
-    /* Centraliza as imagens verticalmente */
+
 }
 
 .logo-empresas-img4 {
@@ -554,7 +550,7 @@ footer {
     background-position: left;
     background-size: contain;
     margin: 30px;
-    /* Adiciona um pequeno espaFço entre as imagens */
+
 
 }
 
@@ -566,7 +562,7 @@ footer {
     background-position: left;
     background-size: contain;
     margin: 50px;
-    /* Adiciona um pequeno espaço entre as imagens */
+
 
 }
 
@@ -578,6 +574,6 @@ footer {
     background-position: left;
     background-size: contain;
     margin: 50px;
-    /* Adiciona um pequeno espaço entre as imagens */
+
 
 }

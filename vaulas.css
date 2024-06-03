@@ -12,9 +12,11 @@
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.05);
     }
+
     100% {
         transform: scale(1);
     }
@@ -33,7 +35,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Header */
+
 header {
     width: 100%;
     height: 10vh;
@@ -96,7 +98,7 @@ header {
     text-decoration: 3px solid underline;
 }
 
-/* MENU MOBILE */
+
 .menu-mobile {
     background-color: #2a2a2a;
     position: absolute;
@@ -131,7 +133,7 @@ header {
     background-color: #6666;
 }
 
-/* Botão mobile */
+
 #btn-menu {
     background-color: transparent;
     color: #010208;
@@ -149,25 +151,25 @@ header {
 }
 
 .imagem-introducao {
-    float: left; /* Alinha a imagem à esquerda do texto */
-    margin-right: 20px; /* Adiciona um espaço à direita da imagem */
-    max-width: 50%; /* Define a largura máxima da imagem para 50% do contêiner pai */
-    height: auto; /* Permite que a altura da imagem seja ajustada automaticamente para manter a proporção */
+    float: left;
+    margin-right: 20px;
+    max-width: 50%;
+    height: auto;
 }
 
 .texto-introducao {
-    overflow: hidden; /* Limpa o float para que o texto não flutue ao redor da imagem */
+    overflow: hidden;
 }
 
-.introdução{
+.introdução {
     margin: 5px;
 
 }
 
-/* Main */
+
 main {
     width: 100%;
-    min-height:50vh;
+    min-height: 50vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -175,7 +177,7 @@ main {
     gap: 1rem;
     padding: 10px;
     margin-bottom: 1rem;
-    
+
 }
 
 
@@ -195,7 +197,7 @@ main {
     background-size: cover;
     background-position: center;
     animation: pulsar 10s infinite;
-    
+
 }
 
 .cartao {
@@ -401,7 +403,7 @@ footer {
     width: 250px;
     background-color: #937151;
     padding: 20px;
-    flex-shrink: 0; /* Impede que o menu lateral encolha para caber no espaço */
+    flex-shrink: 0;
 }
 
 .menu-lateral ul {
@@ -417,8 +419,8 @@ footer {
     color: #1d1010;
     text-decoration: none;
     font-size: 18px;
-    overflow-y: auto; 
-            z-index: 1000; /* garantir que o menu esteja acima de outros elementos */
+    overflow-y: auto;
+    z-index: 1000;
 }
 
 .highlight {
@@ -431,62 +433,64 @@ footer {
     color: #4e2b1a;
 }
 
-.videosa{
+.videosa {
     color: #000;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
 }
 
-.videosa:hover{
+.videosa:hover {
     background-color: #745a41;
-    color:black;
+    color: black;
 }
 
 
 .video-section {
     margin-left: 20px;
     display: none;
-    
+
 }
 
 .video-section.active {
     display: block;
-    
+
 }
 
 .video-container {
     position: relative;
-    width: 100px; 
-      
+    width: 100px;
+
 }
+
 .video-container iframe {
     position: top;
     top: 0;
     left: 0;
-    width: 800px; 
-    height: 400px; 
+    width: 800px;
+    height: 400px;
 }
 
 .video-description {
-    margin-top: 10px; 
+    margin-top: 10px;
 }
 
 .containerintroduc {
-    display: flex; 
-    align-items: center; 
+    display: flex;
+    align-items: center;
 }
 
 .imagem-introducao {
-    width: 50%; 
-    height: auto; 
+    width: 50%;
+    height: auto;
     transition: transform 0.3s ease;
 }
 
 .imagem-introducao:hover {
     transform: scale(1.1);
 }
+
 .texto-introducao {
-    flex: 1; 
+    flex: 1;
     margin-left: 2rem;
 }
