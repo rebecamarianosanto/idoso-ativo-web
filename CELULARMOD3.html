@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao Celular</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="CELULAR.css">
+</head>
+
+<body>
+    <header>
+        <img src="img\cursos\CELTIT.png" alt="Introdução ao Celular">
+    </header>
+    <span id="burguer" class="material-icons" onclick="clickMenu()">&#xe5d2;</span>
+    <menu id="itens">
+        <ul>
+            <li><a href="CELULARMOD1.html">Módulo 1</a></li>
+            <li><a href="CELULARMOD2.html">Módulo 2</a></li>
+            <li><a href="CELULARMOD3.html">Módulo 3</a></li>
+        </ul>
+    </menu>
+
+    <main>
+        <section class="module">
+            <div class="content-section">
+                <h2>Módulo 3: Aplicativos</h2>
+                <div class="image-section">
+                    <img src="img\cursos\CELULARMODULO3.png" alt="Imagem do Módulo 3">
+                </div>
+                <p>
+                    <button class="next-button" onclick="window.location.href='homecursos.html'">Finalizar
+                        Curso</button>
+                </p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Curso de Uso de Celular para Idosos</p>
+    </footer>
+    <script>function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = "block"
+            }
+        }
+
+    </script>
+</body>
+
+</html>
