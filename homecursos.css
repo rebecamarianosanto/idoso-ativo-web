@@ -215,6 +215,7 @@ main {
     width: 100%;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -267,6 +268,7 @@ main {
     width: 100%;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -575,5 +577,47 @@ footer {
     background-size: contain;
     margin: 50px;
 
+
+}
+
+@media screen and (max-width: 980px){
+    .container-cursos{
+        width: 100%;
+    }
+    .container-cursos-video{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 899px){
+    /* header e menu-mobile *******************/
+    .links-cabecalho{
+        display: none;
+    }
+    header{
+        width: 100%;
+    }
+    .menu-mobile.abrir{
+        visibility: visible;
+        height: calc(100vh - 77px);
+    }
+    #btn-menu{
+        display: block;
+    }
+}
+@media screen and (max-width: 614px){
+    .footer-infos{
+        flex-direction: column;
+        width: 100%;
+    }
+
+}
+@media screen and (max-width: 500px){
+    .num-contatos-footer{
+        flex-direction: column;
+        width: 100%;
+        text-align: left;
+        gap: 2rem;
+
+    }
 
 }
