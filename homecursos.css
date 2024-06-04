@@ -215,7 +215,6 @@ main {
     width: 100%;
     height: auto;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -268,7 +267,6 @@ main {
     width: 100%;
     height: auto;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -582,9 +580,11 @@ footer {
 
 @media screen and (max-width: 980px){
     .container-cursos{
+        flex-direction: column;
         width: 100%;
     }
     .container-cursos-video{
+        flex-direction: column;
         width: 100%;
     }
 }
